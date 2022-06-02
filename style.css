@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/back.jpg);
+}
+
+#gameCon{
+    height: 100vh;
+    /* height: 700px; */
+    width: 390px;
+    border: 1px solid black;
+    margin: 0px auto;
+    background: url(./images/bg.jpg);
+    background-size: contain;
+    overflow: hidden;
+}
+
+#oppCar1{
+    height: 100px;
+    width: 130px;
+    /* background-color: blue; */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation: moveOne 1.8s linear infinite;
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+#oppCar2{
+    height: 100px;
+    width: 130px;
+    /* background-color: blue; */
+    position: relative;
+    top: -100px;
+    left: 0px;
+    animation: moveTwo 1.4s linear infinite;
+    text-align: right;
+}
+
+#oppCar1 img{
+    height: 100px;
+}
+
+#oppCar2 img{
+    height: 100px;
+}
+
+@keyframes moveOne {
+    0%{
+        top: -5vh;
+    }
+    100%{
+        top: 101vh;
+    }
+}
+
+@keyframes moveTwo {
+    0%{
+        top: -20vh;
+    }
+    100%{
+        top: 101vh;
+    }
+}
+
+#userCar{
+    height: 100px;
+    width: 130px;
+    /* background-color: orange; */
+    position: relative;
+    top: 250px;
+    left: 130px;
+    text-align: center;
+}
+
+#userCar img{
+    height: 100px;
+}
+
+#keys{
+    /* border: 1px solid black; */
+    height: 45px;
+    position: relative;
+    top: 280px;
+    left: 125px;
+    justify-content: center;
+}
+
+#keys img{
+    /* border: 2px solid black; */
+    height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.pressed{
+    box-shadow: 0px 0px 2px white;
+    border-radius: 100%;
+    background-color: orange;
+}
+
+#result{
+    height: 200px;
+    width: 400px;
+    background-color: cornflowerblue;
+    margin: 1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+#score{
+    font-size: 2.2rem;
+    color: brown;
+}
+
+#resbtn{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: cyan;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}

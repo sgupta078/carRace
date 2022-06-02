@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Let's Race</title>
+</head>
+<body>
+    <div id="gameCon">
+        <div id="oppCar1">
+            <img src="./images/opp_car.png" alt="">
+        </div>
+        <div id="oppCar2">
+            <img src="./images/opp_car.png" alt="">
+        </div>
+        <div id="userCar">
+            <img src="./images/user_car11.png" alt="">
+        </div>
+        <div id="keys">
+            <img id="left" src="./images/left.png" alt="">
+            <img id="right" src="./images/right.png" alt="">
+        </div>
+    </div>
+    <div id="result">
+    <h1>Game Over</h1>
+    <p id="score"></p>
+    <button id="resbtn" onclick="location.reload()">Restart </button>
+    </div>
+    <audio id="jumpsound" src="./sounds/jumpsound.mp3"></audio>
+    <script src="index.js"></script>
+</body>
+</html>
