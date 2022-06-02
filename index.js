@@ -5,7 +5,17 @@ var result = document.getElementById("result");
 const score = document.getElementById("score");
 var game = document.getElementById("gameCon");
 var jumpsound = document.getElementById("jumpsound");
+var start = document.getElementById("start");
 var counter = 0;
+
+
+// start the game via button and enter key
+
+document.querySelector("#stbtn").addEventListener("click", function(){
+    start.style.display = "none";
+    game.style.display = "block";
+});
+
 
 
 // generating random lanes for opponent cars (traffic cars)
