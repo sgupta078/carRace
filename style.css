@@ -2,26 +2,27 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     background-image: url(./images/back.jpg);
 }
 
 #start{
-    max-height: 60vh;
-    max-width: 70vw;
+    height: 25 rem;
+    width: 30rem;
     background-color: cornflowerblue;
     margin: 30vh auto;
-    padding: 25px;
-    border-radius: 20px;
-    font-size: 30px;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
     text-align: center;
     color: white;
     display: block;
 }
 
-#start h4{
-    font-size: 30px;
+#start #l2{
+    font-size: 1.7rem;
 }
 
 #gameCon{
@@ -123,25 +124,29 @@ body{
 }
 
 #result{
-    max-width: 50vw;
-    max-height: 50vh;
+    height: 25 rem;
+    width: 30rem;
     background-color: cornflowerblue;
-    margin: 1rem auto;
-    padding: 25px;
-    border-radius: 20px;
-    font-size: 30px;
+    margin: 25vh auto;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
     text-align: center;
     color: white;
     display: none;
 }
 
-#result h1{
-    font-size: 35px;
+#result #r1{
+    font-size: 3rem;
 }
 
 #score{
     font-size: 2.2rem;
     color: brown;
+}
+
+#result #r2{
+    font-size: 1.5rem;
 }
 
 #resbtn, #stbtn{
