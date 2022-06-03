@@ -7,15 +7,28 @@ var game = document.getElementById("gameCon");
 var jumpsound = document.getElementById("jumpsound");
 var start = document.getElementById("start");
 var counter = 0;
-
+var flag = 0;
 
 // start the game via button and enter key
 
 document.querySelector("#stbtn").addEventListener("click", function(){
     start.style.display = "none";
     game.style.display = "block";
+    flag = 1;
 });
 
+window.addEventListener("keydown", function(e){
+    if(e.keyCode == 13){
+        if(flag == 0){
+            start.style.display = "none";
+            game.style.display = "block";
+            flag = 1;
+        }
+        if(flag == 100){
+            location.reload();
+        }
+    }
+});
 
 
 // generating random lanes for opponent cars (traffic cars)
@@ -142,5 +155,6 @@ setInterval(function Gameover(){
         game.style.display = "none";
         score.innerHTML = `Score: ${counter} `;
         counter=0;
+        flag=100;
     }
 }, 10);
