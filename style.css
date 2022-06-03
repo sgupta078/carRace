@@ -8,8 +8,8 @@ body{
 }
 
 #start{
-    height: max-content;
-    width: max-content;
+    max-height: 60vh;
+    max-width: 70vw;
     background-color: cornflowerblue;
     margin: 30vh auto;
     padding: 25px;
@@ -18,6 +18,10 @@ body{
     text-align: center;
     color: white;
     display: block;
+}
+
+#start h4{
+    font-size: 30px;
 }
 
 #gameCon{
@@ -119,8 +123,8 @@ body{
 }
 
 #result{
-    height: max-content;
-    width: max-content;
+    max-width: 50vw;
+    max-height: 50vh;
     background-color: cornflowerblue;
     margin: 1rem auto;
     padding: 25px;
@@ -129,6 +133,10 @@ body{
     text-align: center;
     color: white;
     display: none;
+}
+
+#result h1{
+    font-size: 35px;
 }
 
 #score{
